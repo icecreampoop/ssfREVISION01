@@ -10,7 +10,7 @@ public class UserInfoModel {
     @Size(min = 5, max = 20, message = "Username must be between 5 and 20 characters")
     private String username;
 
-    @Pattern(regexp = "[Mm][Ff]{1}", message = "Invalid Gender")
+    @Pattern(regexp = "[Mm|Ff]{1}", message = "Invalid Gender")
     private String gender;
 
     // Explanation:
