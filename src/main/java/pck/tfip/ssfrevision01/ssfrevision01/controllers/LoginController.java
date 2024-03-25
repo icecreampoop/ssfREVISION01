@@ -33,6 +33,8 @@ public class LoginController {
             return "login";
         }
 
+        session.setAttribute("userinfo", userinfomodel);
+
         return "productlist";
     }
 }
