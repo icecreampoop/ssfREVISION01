@@ -11,12 +11,13 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import pck.tfip.ssfrevision01.Utils.Util;
 import pck.tfip.ssfrevision01.ssfrevision01.services.JsonService;
 
 @SpringBootApplication
 public class Ssfrevision01Application implements CommandLineRunner{
 	// json string
-	static final Path path = Paths.get("src\\main\\resources\\static\\products.json");
+	static final Path path = Paths.get(Util.PRODUCT_LIST_PATH);
 	
 	@Autowired
 	JsonService jsonService;
