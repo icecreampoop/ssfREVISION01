@@ -14,7 +14,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.json.JsonObject;
 import pck.tfip.ssfrevision01.Utils.Util;
 import pck.tfip.ssfrevision01.ssfrevision01.models.ProductModel;
-import pck.tfip.ssfrevision01.ssfrevision01.services.JsonService;
 
 @Repository
 public class ProductInfoRepo {
