@@ -35,6 +35,6 @@ public class LoginController {
 
         session.setAttribute("userinfo", userinfomodel);
 
-        return "productlist";
+        return "redirect:/productlist";
     }
 }

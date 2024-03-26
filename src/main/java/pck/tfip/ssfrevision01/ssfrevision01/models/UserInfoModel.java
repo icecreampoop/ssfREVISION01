@@ -18,7 +18,7 @@ public class UserInfoModel {
     // [89] Matches either 8 or 9
     // \\d{7} Matches exactly 7 digits (0-9)
     // $ Asserts the end of the line
-    @Pattern(regexp = "^[89]\\d{7}$")
+    @Pattern(regexp = "^[89]\\d{7}$", message = "Please enter a valid Singapore number")
     private String telephone;
 
     public String getUsername() {

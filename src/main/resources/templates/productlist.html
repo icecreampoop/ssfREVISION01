@@ -7,6 +7,12 @@
 </head>
 <body>
     <h1>Welcome <span data-th-text="${session.userinfo.username}"></span>!</h1>
-    
+    <p data-th-each = "product : ${productlist}">
+        Product: <span data-th-text="${product.title}"></span>
+        <br>
+        Description: <span data-th-text="${product.description}"></span>
+        <br>
+        Cost: <span data-th-text="${product.price}"></span>
+    </p>
 </body>
 </html>
